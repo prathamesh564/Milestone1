@@ -61,7 +61,6 @@ INSERT INTO Users VALUES
 (4, 'Sneha Iyer', 'sneha@gmail.com'),
 (5, 'Vikram Rao', 'vikram@gmail.com');
 
--- 2. Movies
 INSERT INTO Movies VALUES
 (1, 'Inception'),
 (2, 'Avengers'),
@@ -69,7 +68,6 @@ INSERT INTO Movies VALUES
 (4, 'Jawan'),
 (5, 'KGF Chapter 2');
 
--- 3. Theatres
 INSERT INTO Theatres VALUES
 (1, 'PVR Cinemas', 'Bangalore'),
 (2, 'INOX', 'Mumbai'),
