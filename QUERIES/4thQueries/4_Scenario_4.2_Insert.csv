@@ -1,0 +1,5 @@
+"booking_id","show_id","booking_time","total_amount","status"
+1,1,"2026-05-01 09:00:00",500,Confirmed
+2,2,"2026-05-01 12:00:00",200,Pending
+3,3,"2026-05-01 17:00:00",300,Confirmed
+4,1,"2026-04-29 06:11:47",300,Pending
