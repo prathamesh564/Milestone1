@@ -205,7 +205,7 @@ INSERT INTO Users VALUES
 INSERT INTO Bookings VALUES
 (1, 1, '2026-05-01 09:00:00', 500.00, 'Confirmed'),
 (2, 2, '2026-05-01 12:00:00', 200.00, 'Pending'),
-(3, 3, '2026-05-01 17:00:00', 300.00, 'Confirmed');
+(3, 3, '2026-05-01 18:00:00', 300.00, 'Confirmed');
 
 INSERT INTO Booking_Users VALUES
 (1, 1),
