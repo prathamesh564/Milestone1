@@ -265,3 +265,24 @@ WHERE t.theatre_id = 1
   AND s.date = '2026-05-01' 
 GROUP BY s.show_id, m.title, s.start_time;
 
+BEGIN TRANSACTION; 
+
+SELECT status
+FROM Show_Seats
+WHERE show_seat_id IN (1, 2);
+
+INSERT INTO Bookings (booking_id, show_id, booking_time, total_amount, status)
+VALUES (4, 1, CURRENT_TIMESTAMP, 300.00, 'Pending');
+
+INSERT INTO Booking_Seats (booking_id, user_id, show_seat_id)
+VALUES 
+(2, 2, 1),
+(2, 2, 2);
+
+UPDATE Show_Seats
+SET status = 'Booked'
+WHERE show_seat_id IN (1, 2)
+  AND status = 'Available';
+
+COMMIT; 
+
